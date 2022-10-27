@@ -1,0 +1,129 @@
+.page-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-nav {
+    & .footer-nav__contact {
+            display: flex;
+            margin-top: 9px;
+    
+}
+}
+
+.site-adress-footer {
+    & .link {
+        color: var(--primary-white-color);
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color var(--transition-dur);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+                }
+            }
+}
+
+.site-contact-footer {
+    & .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color var(--transition-dur);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+                }
+            }
+}
+
+.footer-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.footer-adress {
+    margin-right: 70px;
+}
+
+.adress {
+    font-style: normal;
+}
+
+
+.footer-social-list {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-dur);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+.footer-social-list-icon {
+    fill: var(--primary-white-color);
+}
+
+.footer-social-block {
+    margin-right: 93px;
+}
+
+.footer-connect-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.mail-footer {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 358px;
+    border-radius: 4px;
+    padding: 15px 16px;
+    background: #2F303A;
+    color: var(--primary-white-color);
+
+    &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.footer-button-wraper {
+    display: flex;
+}
+
+.footer-button-icon {
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+}
