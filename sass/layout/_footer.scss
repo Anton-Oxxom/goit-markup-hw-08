@@ -1,12 +1,28 @@
 .page-footer {
-    display: flex;
-    align-items: baseline;
-}
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    text-align: center;
+    }
+@media screen and (min-width: 1200px) {
+        display: flex;
+            align-items: baseline;
+    }
+        
+        }
+
 
 .footer-nav {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+}
+    
     & .footer-nav__contact {
-            display: flex;
-            margin-top: 9px;
+        margin-top: 9px;
+    
+        @media screen and (min-width: 768px) {
+                display: flex;
+                    
+            }
+            
     
 }
 }
@@ -56,7 +72,9 @@
 }
 
 .footer-adress {
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    }
 }
 
 .adress {
@@ -67,6 +85,7 @@
 .footer-social-list {
     display: flex;
     column-gap: 10px;
+    justify-content: center;
 }
 
 .footer-social-list-link {
@@ -90,7 +109,13 @@
 }
 
 .footer-social-block {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    }
+    
 }
 
 .footer-connect-title {
@@ -120,10 +145,17 @@
 }
 
 .footer-button-wraper {
-    display: flex;
+    @media screen and (min-width: 767px) {
+display: flex;
+    }
+    
 }
 
 .footer-button-icon {
     margin-left: 10px;
     fill: var(--primary-white-color);
 }
+
+
+
+
