@@ -13,9 +13,13 @@
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--primary-white-color);
-    padding: 10px 32px;
+    padding: 10px 24px;
     transition: background-color var(--transition-dur), 
                 box-shadow var(--transition-dur);
+
+                @media screen and (min-width: 1200px) {
+                        padding: 10px 32px;
+                    }
 
     &:hover,
     &:focus {
