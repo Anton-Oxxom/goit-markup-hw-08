@@ -2,7 +2,8 @@
     display: none;
 
 @media screen and (min-width: 768px) {
-        
+        display: flex;
+            border-bottom: 1px solid #ECECEC;
     }
 
     @media screen and (min-width: 1200px) {
@@ -14,17 +15,35 @@
 }
 
 .nav-centr {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        align-items: center;
+        margin-right: 96px;
+        /*выставить по макету*/
+    }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;         
+        }
+    
 }
 
 .site-nav {
-    display: flex;
-    margin-left: 93px;
-    display: flex;
-    column-gap: 50px;
+    @media screen and (min-width: 768px) {display: flex;
+        margin-left: 87px;
+    
+        column-gap: 50px;
+    }
+        @media screen and (min-width: 1200px) {
+            
+            margin-left: 93px;
+    
+            
+        }
+    
 
         & .link {
+            
             display: block;
             position: relative;
             padding-top: 32px;
@@ -36,6 +55,7 @@
             text-decoration: none;
             letter-spacing: 0.02em;
             transition: color var(--transition-dur);
+            
 
             &:hover,
             &:focus {
@@ -58,11 +78,49 @@
 
 
 .site-contact-head {
-    display: flex;
-    margin-left: auto;
-    column-gap: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;    
+    padding-bottom: 21px;                     /*выставить по макету*/
+
+
+}
+    @media screen and (min-width: 1200px) {
+                display: flex;
+                margin-left: auto;
+                column-gap: 50px;
+        }
+   
 
         & .link {
+           
+            @media screen and (min-width: 768px) and (max-width: 1199px){
+                font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-decoration: none;
+                    letter-spacing: 0.02em;
+                    color: var(--primary-text-color);
+                    color: #757575;
+                    transition: color var(--transition-dur);
+                    padding: 5px;
+            }
+
+@media screen and (min-width: 1200px) {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: color var(--transition-dur);
+    
+    /*выставить по макету*/
+}
+
+
+
+            @media screen and (min-width: 1200px) {
             display: flex;
             padding-top: 32px;
             padding-bottom: 32px;
@@ -74,6 +132,7 @@
             letter-spacing: 0.02em;
             color: #757575;
             transition: color var(--transition-dur);
+            }
 
             &:hover,
             &:focus {
