@@ -352,14 +352,26 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-phone.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .board {
+    background-image: url(../images/bg-phone@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .board {
     max-width: 768px;
+    background-image: url(../images/bg-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .board {
+    background-image: url(../images/bg-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -368,9 +380,14 @@ body {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    background-image: url(../images/bg.jpg);
   }
 }
-
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .board {
+    background-image: url(../images/bg@2x.jpg);
+  }
+}
 .board-title {
   padding-left: 45px;
   padding-right: 45px;
@@ -549,10 +566,24 @@ body {
   margin-bottom: 16px;
 }
 
-.team-list_cards {
+.team-list__cards {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.photo-thumb {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .photo-thumb {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo-thumb {
+    width: 270px;
+  }
 }
 
 .team-description {
@@ -1063,4 +1094,6 @@ justify-content: center;
 }
 .button-contact-form:hover, .button-contact-form:focus {
   background-color: #188CE8;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*@import './layout/mobile';*//*# sourceMappingURL=main.css.map */

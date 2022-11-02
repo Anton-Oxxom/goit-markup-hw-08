@@ -9,22 +9,57 @@
         background-color: #2F303A;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/bg.jpg);
+            url(../images/bg-phone.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
 
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        max-width: 1600px;
-        height: 600px;
+  
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .board {
+        background-image: url(../images/bg-phone@2x.jpg);
     }
 }
+
+ @media screen and (min-width: 768px) {
+     .board {
+        max-width: 768px;
+        background-image:
+        
+                url(../images/bg-tablet.jpg);
+     }
+         @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+             .board {
+                 background-image: url(../images/bg-tablet@2x.jpg);
+             }
+            }
+ }
+
+
+ @media screen and (min-width: 1200px) {
+     .board {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            max-width: 1600px;
+            height: 600px;
+            background-image:
+
+             url(../images/bg.jpg);
+     }
+
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         .board {
+             background-image: url(../images/bg@2x.jpg);
+         }
+     }
+ }
+
+
+
 
 .board-title {
     padding-left: 45px;
