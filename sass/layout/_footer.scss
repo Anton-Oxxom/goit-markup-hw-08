@@ -144,6 +144,7 @@ justify-content: center;
 
 
 
+
 .footer-connect-title {
     margin-bottom: 20px;
     font-weight: 700;
@@ -186,22 +187,17 @@ justify-content: center;
 
 
 .footer-button-wraper {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-
     }
+    
+         @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 100px;
+         }
 
-
-        }
+       
     @media screen and (min-width: 1200px) {
 display: flex;
     }
@@ -212,6 +208,8 @@ display: flex;
     margin-left: 10px;
     fill: var(--primary-white-color);
 }
+
+
 
 
 

@@ -165,6 +165,11 @@ body {
   align-items: center;
   display: flex;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-button {
+    margin-left: 125px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-button {
     padding: 10px 28px;
@@ -785,19 +790,11 @@ justify-content: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-button-wraper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-button-wraper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
