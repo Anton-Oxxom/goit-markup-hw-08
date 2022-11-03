@@ -1,5 +1,9 @@
 .page-header {
-    display: none;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 16px;
+padding-bottom: 16px;
 
 @media screen and (min-width: 768px) {
         display: flex;
@@ -14,12 +18,19 @@
 
 }
 
+.mobile-menu-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
 .nav-centr {
     @media screen and (min-width: 768px) and (max-width: 1199px){
         display: flex;
         align-items: center;
-        margin-right: 96px;
-        /*выставить по макету*/
+        margin-right: 80px;
+        
     }
         @media screen and (min-width: 1200px) {
             display: flex;
@@ -29,7 +40,9 @@
 }
 
 .site-nav {
-    @media screen and (min-width: 768px) {display: flex;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
         margin-left: 87px;
     
         column-gap: 50px;
@@ -78,6 +91,7 @@
 
 
 .site-contact-head {
+    display: none;
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 21px;    
     padding-bottom: 21px;                     /*выставить по макету*/
@@ -93,7 +107,7 @@
 
         & .link {
            
-            @media screen and (min-width: 768px) and (max-width: 1199px){
+            @media screen and (min-width: 768px){
                 font-weight: 500;
                     font-size: 12px;
                     line-height: 14px;
