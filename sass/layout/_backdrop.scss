@@ -50,8 +50,8 @@
     cursor: pointer;
     transition: fill var(--transition-dur);
 
-    &:hover,
-    &:focus {
+    & :hover,
+    & :focus {
             fill: #2196F3;
         }
 }

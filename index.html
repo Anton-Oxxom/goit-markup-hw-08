@@ -63,18 +63,37 @@
               <use href="./images/sprite.svg#icon-close-button"></use>
             </svg>
           </button>
-          <ul>
-            <li>
-              <a href="">link-1</a>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-menu list">
+              <li class="mobile-nav-link">
+                <a href="./index.html" class="link current-color">Студія</a>
+              </li>
+              <li class="mobile-nav-link"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+              <li class="mobile-nav-link"><a href="" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact-list list">
+            <li class="mobile-contact-list__link">
+              <a href="tel:+380961111111" class="mobile-contact-link link"> +38 096 111 11 11</a>
             </li>
-            <li>
-              <a href="">link-2</a>
+            <li class="mobile-contact-list__link">
+              <a href="mailto:info@devstudio.com" class="mobile-mail-link link">
+                info@devstudio.com</a
+              >
             </li>
-            <li>
-              <a href="">link-3</a>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list__link">
+              <a href="#" class="link">Instagram</a>
             </li>
-            <li>
-              <a href="">link-4</a>
+            <li class="mobile-social-list__link">
+              <a href="#" class="link">Twitter</a>
+            </li>
+            <li class="mobile-social-list__link">
+              <a href="#" class="link">Facebook</a>
+            </li>
+            <li class="mobile-social-list__link">
+              <a href="#" class="link">Linkedin</a>
             </li>
           </ul>
         </div>
@@ -147,20 +166,36 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-list__img">
-              <img src="./images/box1.jpg" alt="Програмування" width="370" />
+              <img
+                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                src="./images/box1-desktop.jpg"
+                alt="Програмування"
+                width="370"
+              />
+
               <div class="work-box">
                 <h3 class="work-box-description">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work-list__img">
-              <img src="./images/box2.jpg" alt="Мобільні додатки" width="370" />
+              <img
+                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                src="./images/box2.jpg"
+                alt="Мобільні додатки"
+                width="370"
+              />
               <div class="work-box">
                 <h3 class="work-box-description">Мобільні додатки</h3>
               </div>
             </li>
 
             <li class="work-list__img">
-              <img src="./images/box3.jpg" alt="Дизайн" width="370" />
+              <img
+                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                src="./images/box3.jpg"
+                alt="Дизайн"
+                width="370"
+              />
               <div class="work-box">
                 <h3 class="work-box-description">Дизайнерські рішення</h3>
               </div>
@@ -176,13 +211,26 @@
 
           <ul class="team-list list">
             <li class="team-list__person team-list__cards">
-              <img
-                class="photo-thumb"
-                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
-                src="./images/team1.jpg"
-                alt="Ігор Дем'яненко - Product Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team1-desktop.jpg 1x, ./images/team1-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team1-tablet.jpg 1x, ./images/team1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team1-phone.jpg 1x, ./images/team1-phone@2x.jpg 2x"
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="photo-thumb"
+                  src="./images/team1-phone.jpg"
+                  alt="Ігор Дем'яненко - Product Designer"
+                  width="270"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="title">Ігор Дем'яненко</h3>
                 <p class="text">Product Designer</p>
@@ -243,13 +291,26 @@
               </div>
             </li>
             <li class="team-list__person team-list__cards">
-              <img
-                class="photo-thumb"
-                srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
-                src="./images/team2.jpg"
-                alt="Ольга Рєпіна - Frontend Developer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team2-desktop.jpg 1x, ./images/team2-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team2-tablet.jpg 1x, ./images/team2-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team2-phone.jpg 1x, ./images/team2-phone@2x.jpg 2x"
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="photo-thumb"
+                  src="./images/team2-phone.jpg"
+                  alt="Ігор Дем'яненко - Product Designer"
+                  width="270"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="title">Ольга Рєпіна</h3>
                 <p class="text">Frontend Developer</p>
@@ -310,13 +371,26 @@
               </div>
             </li>
             <li class="team-list__person team-list__cards">
-              <img
-                class="photo-thumb"
-                srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
-                src="./images/team3.jpg"
-                alt="Микола Тарасов - Marketing"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team3-desktop.jpg 1x, ./images/team3-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team3-tablet.jpg 1x, ./images/team3-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team3-phone.jpg 1x, ./images/team3-phone@2x.jpg 2x"
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="photo-thumb"
+                  src="./images/team3-phone.jpg"
+                  alt="Ігор Дем'яненко - Product Designer"
+                  width="270"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="title">Микола Тарасов</h3>
                 <p class="text">Marketing</p>
@@ -377,13 +451,26 @@
               </div>
             </li>
             <li class="team-list__person team-list__cards">
-              <img
-                class="photo-thumb"
-                srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
-                src="./images/team4.jpg"
-                alt="Михайло Єрмаков - UI Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team4-desktop.jpg 1x, ./images/team4-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team4-tablet.jpg 1x, ./images/team4-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team4-phone.jpg 1x, ./images/team4-phone@2x.jpg 2x"
+                  media="(min-width: 280px)"
+                />
+                <img
+                  class="photo-thumb"
+                  src="./images/team4-phone.jpg"
+                  alt="Ігор Дем'яненко - Product Designer"
+                  width="270"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="title">Михайло Єрмаков</h3>
                 <p class="text">UI Designer</p>

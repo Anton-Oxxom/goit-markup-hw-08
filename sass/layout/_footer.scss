@@ -1,5 +1,5 @@
 .page-footer {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
     text-align: center;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px){
@@ -68,18 +68,7 @@ align-items: baseline;
             }
 }
 
-/*
-.footer-subscribe {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-
-    }
-
-}
-*/
 
 .footer-title {
     font-size: 14px;
@@ -136,7 +125,7 @@ justify-content: center;
 }
 
 .footer-social-block {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
@@ -159,14 +148,17 @@ justify-content: center;
 }
 
 .mail-footer {
-    @media screen and (max-width: 1199px) {
     border: 1px solid rgba(255, 255, 255, 0.3);
-        width: 450px;
+        width: 100%;
         border-radius: 4px;
         padding: 15px 16px;
         background: #2F303A;
         color: var(--primary-white-color);
         margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+    
+        width: 450px;
+       
         }
    
                  @media screen and (min-width: 1200px) {
@@ -177,6 +169,7 @@ justify-content: center;
         background: #2F303A;
         color: var(--primary-white-color);
         margin-right: 12px;
+        margin-bottom: 0;
                  }
 
     &::placeholder {
@@ -190,7 +183,7 @@ justify-content: center;
 
 
 .footer-button-wraper {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
