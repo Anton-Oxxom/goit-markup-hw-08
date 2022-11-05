@@ -20,9 +20,7 @@ align-items: baseline;
 
 
 .footer-nav {
-    @media screen and (max-width: 1200px) {
-        margin-bottom: 60px;
-}
+  
     
     & .footer-nav__contact {
         margin-top: 9px;
@@ -87,7 +85,7 @@ align-items: baseline;
 
 .footer-adress {
    
-    
+    margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
     margin-right: 70px;
     }
