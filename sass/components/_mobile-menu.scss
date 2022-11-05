@@ -25,6 +25,10 @@
     
  }
 
+ .mobile-nav {
+    margin-bottom: auto;
+ }
+
         .mobile-menu__close-btn {
             position: absolute;
             top: 10px;
@@ -105,8 +109,7 @@
     .mobile-social-list {
         display: flex;
         column-gap: 32px;
-        
-        
+        flex-wrap: wrap;
          }
     
     .mobile-social-list__link {

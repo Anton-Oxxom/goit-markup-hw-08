@@ -121,9 +121,19 @@ body {
 
 .filtr-nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   column-gap: 8px;
+  row-gap: 15px;
   margin-bottom: 34px;
+}
+@media screen and (min-width: 768px) {
+  .filtr-nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 34px;
+  }
 }
 
 .button-portfolio .link {
@@ -217,6 +227,9 @@ body {
     width: 100%;
     height: 100%;
   }
+  .mobile-nav {
+    margin-bottom: auto;
+  }
   .mobile-menu__close-btn {
     position: absolute;
     top: 10px;
@@ -283,6 +296,7 @@ body {
   .mobile-social-list {
     display: flex;
     column-gap: 32px;
+    flex-wrap: wrap;
   }
   .mobile-social-list__link {
     font-weight: 500;
@@ -919,6 +933,12 @@ body {
 .footer-button-icon {
   margin-left: 10px;
   fill: var(--primary-white-color);
+}
+
+@media screen and (max-width: 767px) {
+  .filtr-nav-wraper {
+    max-width: 326px;
+  }
 }
 
 .portfolio-list {
