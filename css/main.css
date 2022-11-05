@@ -241,6 +241,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
+    margin-bottom: auto;
   }
   .mobile-nav-link {
     font-weight: 500;
