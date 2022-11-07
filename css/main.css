@@ -324,7 +324,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-header {
     display: flex;
     justify-content: space-between;
@@ -337,6 +337,7 @@ body {
   .page-header {
     display: flex;
     border-bottom: 1px solid #ECECEC;
+    align-items: center;
   }
 }
 
@@ -421,8 +422,6 @@ body {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .site-contact-head {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -826,8 +825,10 @@ body {
   background-color: #2F303A;
 }
 
-.footer-adress {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-adress {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-adress {
